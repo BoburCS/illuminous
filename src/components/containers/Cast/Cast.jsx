@@ -1,8 +1,7 @@
 import CastCard from "@cards/CastCard";
 import { BtnRight } from "@elements/Button";
-import cast from "@data/cast";
 
-export default function Cast() {
+export default function Cast({ cast }) {
     return (
         <div className="w-full h-auto px-60">
             <h1 className="font-semibold text-2xl mb-24">Актеры и создатели</h1>

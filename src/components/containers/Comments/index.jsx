@@ -1,8 +1,7 @@
 import CommentCard from "@cards/CommentCard";
 import { BtnRight } from "@elements/Button";
-import comments from "@data/comments";
 
-export default function index() {
+export default function index({ comments }) {
     return (
         <div className="w-full h-auto px-40">
             <h1 className="font-semibold text-2xl mb-24">Отзывы</h1>

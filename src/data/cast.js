@@ -10,4 +10,16 @@ const cast = [
     {id: "77", name: "Маккензи Фой", role: "Режисёр", image: actor4},
 ];
 
+import cast1 from "@images/house-cast-1.png"; 
+import cast2 from "@images/house-cast-2.png"; 
+import cast3 from "@images/house-cast-3.png"; 
+import cast4 from "@images/house-cast-4.png"; 
+
+export const houseCast = [
+    {id: "9090", name: "Хью Лори", role: "Актёр", image: cast1},
+    {id: "8080", name: "Шон Леонард", role: "Актёр", image: cast2},
+    {id: "7070", name: "Лиза Эдельштейн", role: "Актриса", image: cast3},
+    {id: "6060", name: "Джесси Спенсер", role: "Режисёр", image: cast4},
+];
+
 export default cast;

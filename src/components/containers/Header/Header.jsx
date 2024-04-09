@@ -6,7 +6,7 @@ import Profile from "@icons/icon-profile.svg";
 const navLinks = [
     { title: "Главная", link: "" },
     { title: "Фильмы", link: "movie" },
-    { title: "Сериалы", link: "tvshows" },
+    { title: "Сериалы", link: "tvshow" },
     { title: "Мультфильмы", link: "cartoons" },
 ];
 

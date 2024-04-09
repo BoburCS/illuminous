@@ -5,6 +5,7 @@ import Footer from "@containers/Footer";
 
 const Home = lazy(() => import("@pages/home"));
 const Movie = lazy(() => import("@pages/movie"));
+const TvShow = lazy(() => import ("@pages/tvshow"));
 
 export default function App() {
     return (
@@ -14,6 +15,7 @@ export default function App() {
                     <Routes>
                         <Route exact path="/" element={<Home />} />
                         <Route exact path="/movie" element={<Movie />} />
+                        <Route exact path="/tvshow" element={<TvShow />} />
 
                         <Route path="*" element={<h1 className="text-white">404! Not Found</h1>} />
                     </Routes>

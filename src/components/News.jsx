@@ -1,6 +1,6 @@
 import { useState } from "react";
-import MovieCard from "@components/Cards/MovieCard";
-import { BtnRight } from "@elements/Button";
+import MovieList from "@containers/MovieList";
+import TabPanel from "@elements/TabPanel";
 
 import Movies from "@data/movies";
 
@@ -22,24 +22,9 @@ export default function News() {
 
     return (
         <div className="text-white font-montserrat w-full">
-            {/* Tab Panel */}
-            <div className="mb-20 px-10 rounded-medium bg-light-dark flex items-center gap-20">
-                {Tabs.map((tab) => (
-                    <div onClick={() => handleTabClick(tab.id)} className="cursor-pointer" key={tab.id}>
-                        <h2 className={`font-medium text-base py-6 ${tab.active ? 'border-b-2 border-red' : ''}`}>{tab.title}</h2>
-                    </div>
-                ))}
-            </div>
+            <TabPanel tabs={Tabs} handleTabClick={handleTabClick} />
 
-            {/* Movies */}
-            <div className="w-full flex items-center gap-20">
-                <div className="w-full grid grid-cols-4 gap-11">
-                    {Movies.map((movie) => (
-                        <MovieCard {...movie} key={movie.id} />
-                    ))}
-                </div>
-                <BtnRight />
-            </div>
+            <MovieList movies={Movies} /> 
         </div>
     );
 }

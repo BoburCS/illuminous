@@ -6,6 +6,7 @@ export default {
             backgroundImage: {
                 hero: "url('/src/assets/images/hero1.png')",
                 movie: "url('/src/assets/images/hero2.png')",
+                tvshow: "url('/src/assets/images/hero3.png')",
                 logo: "url('/src/assets/icons/icon-logo.svg')",
             },
             fontFamily: {
