@@ -1,4 +1,5 @@
 import Button from "@elements/Button";
+import Text from "@elements/Text";
 
 import Interstellar from "@images/movie-interstellar.png";
 
@@ -14,28 +15,23 @@ export default function Movie() {
                     className="absolute left-[-5rem] top-1/2 transform -translate-y-1/2"
                 />
 
-                <h2 className="text-[2.25rem] font-semibold mb-4">
+                <Text type={"36"} style="mb-4 flex items-center gap-7">
                     Интерстеллар
-                    <span className="font-medium text-2xl ml-7">2014</span>
-                </h2>
+                    <Text type={"24-medium"}>2014</Text>
+                </Text>
                 <div className="mb-6 w-full flex gap-4">
                     {InterstellarGenres.map((genre) => (
-                        <p
-                            className="font-normal text-base text-red"
-                            key={genre}
-                        >
+                        <Text style="text-red" key={genre}>
                             {genre}
-                        </p>
+                        </Text>
                     ))}
                 </div>
-                <p className="font-normal text-base mb-7">
+                <Text style="mb-7 leading-7">
                     Когда засуха, пыльные бури и вымирание растений <br />{" "}
                     приводят человечество к продовольственному <br /> кризису,
                     коллектив исследователей и учёных...
-                </p>
-                <Button style={"self-start"}>
-                    Смотреть
-                </Button>
+                </Text>
+                <Button style={"self-start"}>Смотреть</Button>
             </div>
         </div>
     );

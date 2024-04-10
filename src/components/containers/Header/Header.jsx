@@ -34,11 +34,13 @@ export default function Header() {
                 </div>
 
                 <div>
-                    <img
-                        src={Profile}
-                        alt="Profile Icon"
-                        className="cursor-pointer"
-                    />
+                    <NavLink to={"/login"}>
+                        <img
+                            src={Profile}
+                            alt="Profile Icon"
+                            className="cursor-pointer"
+                        />
+                    </NavLink>
                 </div>
             </nav>
         </header>

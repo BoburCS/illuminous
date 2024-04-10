@@ -30,7 +30,7 @@ export default function Seasons() {
             <div className="flex items-center gap-20">
                 <div className="grid grid-cols-4 gap-12">
                     {drHouseSeries.slice(0, 4).map((serie, index) => (
-                        <SeriesCard serie={serie} index={index + 1} />
+                        <SeriesCard serie={serie} index={index + 1} key={serie.id} />
                     ))}
                 </div>
 

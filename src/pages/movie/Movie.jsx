@@ -52,7 +52,7 @@ export default function Movie() {
             <div className="mx-32">
                 <h1 className="font-semibold text-2xl mb-12">Похожие фильмы</h1>
 
-                <MovieList movies={relatedMovies} />
+                <MovieList movies={relatedMovies.slice(0, 4)} />
             </div>
         </PageLayout>
     );

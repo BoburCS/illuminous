@@ -1,9 +1,10 @@
+import Text from "@elements/Text";
 
 export default function Scenes({ scenes }) {
     const { Scene1, Scene2, Scene3, Scene4, Scene5 } = scenes;
     return (
         <div className="px-[180px]">
-            <h1 className="font-semibold text-2xl text-center mb-12">Кадры из фильма</h1>
+            <Text type={"24-semibold"} style="text-center mb-12">Кадры из фильма</Text>
 
             <div className="w-full grid grid-cols-3 gap-x-5">
                 <div>

@@ -1,12 +1,14 @@
+import Text from "@elements/Text";
+
 import SearchIcon from "@icons/icon-search.svg";
 
 export default function Search() {
     return (
         <div className="text-white font-montserrat w-full">
-            <h1 className="text-2xl font-semibold mb-4 ">Поиск по сайту</h1>
-            <p className="text-grey text-base font-normal mb-[60px]">
+            <Text type={"24-semibold"} style="mb-4">Поиск по сайту</Text>
+            <Text style="text-grey mb-[60px]">
                 На нашем сайте вы найдете подходящие вам <br /> фильмы и сериалы
-            </p>
+            </Text>
             <div className="w-full rounded-medium bg-light-dark flex items-center justify-between">
                 <input 
                     name="search" 

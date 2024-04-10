@@ -1,4 +1,5 @@
 import Button from "@elements/Button";
+import Text from "@elements/Text";
 
 import Play from "@icons/icon-play.svg";
 import RightArrow from "@icons/icon-right.svg";
@@ -14,14 +15,14 @@ export default function Banner() {
     return (
         <div className="px-12 py-32 flex items-center justify-between">
             <div className="text-white font-montserrat ml-[120px]">
-                <h3 className="text-grey text-base font-normal mb-6">
+                <Text style="text-grey mb-6">
                     _______ Выбор Illuminous
-                </h3>
-                <h1 className="text-4xl font-semibold mb-4">Джокер</h1>
-                <p className="text-[18px] font-medium mb-7">
+                </Text>
+                <Text type="40" style={"mb-4"}>Джокер</Text>
+                <Text type="18" style={"mb-7"}>
                     Готэм. Комик Артур Флек живет с больной матерью, <br />
                     которая с детства учит его «ходить с улыбкой»
-                </p>
+                </Text>
                 <Button style={"font-medium py-[14.5px]"}>
                     Смотреть
                     <img src={Play} alt="Movie Play Icon" />

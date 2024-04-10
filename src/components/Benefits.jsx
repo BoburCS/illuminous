@@ -1,4 +1,5 @@
 import Button from "@elements/Button";
+import Text from "@elements/Text";
 
 import People from "@icons/icon-people.svg";
 import Quality from "@icons/icon-quality.svg";
@@ -19,10 +20,10 @@ const pros = [
 export default function Benefits() {
     return (
         <div className="text-white w-full h-auto px-[280px] py-[90px] bg-light-dark flex flex-col items-center mb-[150px]">
-            <div className="w-full">
-                <h5 className="text-red text-base font-medium text-center mb-6">Illuminous+</h5>
-                <h2 className="text-3xl font-semibold text-center mb-4">Фильмы и сериалы по подписке Illuminous+</h2>
-                <h3 className="text-2xl font-medium text-center mb-[75px]">Бесплатно до конца года</h3>
+            <div className="w-full flex flex-col items-center">
+                <Text style="text-red font-medium mb-6">Illuminous+</Text>
+                <Text type={"30"} style="mb-4">Фильмы и сериалы по подписке Illuminous+</Text>
+                <Text type={"24-medium"} style="mb-[75px]">Бесплатно до конца года</Text>
             </div>
 
             <div className="w-full flex gap-20 mb-[70px]">
@@ -30,7 +31,7 @@ export default function Benefits() {
                     {pros.slice(0, 3).map(pro => (
                         <div key={pro.id} className="w-full flex items-center gap-7">
                             <img src={pro.image} />
-                            <h4>{pro.content}</h4>
+                            <Text>{pro.content}</Text>
                         </div>
                     ))}
                 </div>
@@ -38,7 +39,7 @@ export default function Benefits() {
                     {pros.slice(3, 6).map(pro => (
                         <div key={pro.id} className="w-full flex items-center gap-7">
                             <img src={pro.image} />
-                            <h4>{pro.content}</h4>
+                            <Text>{pro.content}</Text>
                         </div>
                     ))}
                 </div>

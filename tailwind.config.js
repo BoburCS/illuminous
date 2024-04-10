@@ -21,6 +21,7 @@ export default {
                 'red': '#EF4234',
                 'grey': 'rgba(151, 151, 151, 1)',
                 'light-dark': 'rgba(26, 26, 26, 1)',
+                'gray': 'rgba(33, 33, 33, 1)',
             },
             fontSize: {
                 '4xl': '2.5rem',

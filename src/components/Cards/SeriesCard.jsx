@@ -1,5 +1,6 @@
 import MoviePlay from "@icons/icon-movie-play.svg";
 import Button from "@elements/Button";
+import Text from "@elements/Text";
 
 export default function SeriesCard({ serie, index }) {
     return (
@@ -12,7 +13,7 @@ export default function SeriesCard({ serie, index }) {
                 </Button>
             </div>
 
-            <h4 className="font-medium text-lg">{index}. {serie.title}</h4>
+            <Text type="18">{index}. {serie.title}</Text>
         </div>
     );
 }
