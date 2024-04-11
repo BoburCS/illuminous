@@ -5,7 +5,7 @@ import GenresObj from "@data/genres";
 
 export default function Genres() {
     return (
-        <div className="w-full text-white font-montserrat">
+        <div className="w-full px-[170px]">
             <Text type={"24-semibold"} style="mb-4">
                 Смотрите фильмы, которые вам нравятся
             </Text>

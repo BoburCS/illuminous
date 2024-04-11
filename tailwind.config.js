@@ -8,6 +8,8 @@ export default {
                 movie: "url('/src/assets/images/hero2.png')",
                 tvshow: "url('/src/assets/images/hero3.png')",
                 logo: "url('/src/assets/icons/icon-logo.svg')",
+                sherlock: "url('/src/assets/images/movie-sherlock.jpg')",
+                oppenheimer: "url('/src/assets/images/movie-oppenheimer-bg.jpeg')",
             },
             fontFamily: {
                 poppins: ['Poppins', 'sans-serif'],

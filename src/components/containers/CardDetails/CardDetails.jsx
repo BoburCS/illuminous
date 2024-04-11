@@ -4,7 +4,7 @@ import Input from "@elements/Input";
 
 export default function CardDetails() {
     return (
-        <div className="w-full h-auto mb-[150px] flex flex-col items-center justify-center">
+        <div className="w-full h-auto flex flex-col items-center justify-center">
             <Text type={"24-semibold"} style={"mb-[60px]"}>
                 Введите данные карты
             </Text>

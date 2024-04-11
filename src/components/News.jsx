@@ -21,7 +21,7 @@ export default function News() {
     }
 
     return (
-        <div className="text-white font-montserrat w-full">
+        <div className="w-full px-[170px]">
             <TabPanel tabs={Tabs} handleTabClick={handleTabClick} />
 
             <MovieList movies={Movies} /> 

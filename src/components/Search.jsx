@@ -4,7 +4,7 @@ import SearchIcon from "@icons/icon-search.svg";
 
 export default function Search() {
     return (
-        <div className="text-white font-montserrat w-full">
+        <div className="w-full px-[170px]">
             <Text type={"24-semibold"} style="mb-4">Поиск по сайту</Text>
             <Text style="text-grey mb-[60px]">
                 На нашем сайте вы найдете подходящие вам <br /> фильмы и сериалы

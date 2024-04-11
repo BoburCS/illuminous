@@ -1,13 +1,14 @@
+import PageLayout from "@layouts/PageLayout";
 import Hero from "@containers/Hero";
 import SubscriptionsSection from "@components/Subscriptions";
 import CardDetails from "@containers/CardDetails";
 
 export default function Subscriptions() {
     return (
-        <>
+        <PageLayout>
             <Hero bg={"bg-black"} Banner={SubscriptionsBanner} />
             <CardDetails />
-        </>
+        </PageLayout>
     );
 }
 

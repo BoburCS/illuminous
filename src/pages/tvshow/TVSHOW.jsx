@@ -7,7 +7,7 @@ import Comments from "@containers/Comments";
 import Scenes from "@containers/Scenes";
 import MovieList from "@containers/MovieList";
 
-import MovieBanner from "@components/MovieBanner";
+import MovieBanner from "../movie/MovieBanner";
 import DrHouse from "@images/movie-dr-house.png";
 
 import Iflix from "@images/trailer-iflix.png";
@@ -24,6 +24,8 @@ import Scene4 from "@images/house-scene-4.png";
 import Scene5 from "@images/house-scene-5.png";
 
 import { relatedMovies } from "@data/movies";
+
+import Text from "@elements/Text";
 
 const movie = {
     title: "Доктор Хаус",
@@ -52,7 +54,7 @@ export default function TVSHOW() {
             <Comments comments={houseComments} />
             <Scenes scenes={{ Scene1, Scene2, Scene3, Scene4, Scene5 }} />
             <div className="mx-32">
-                <h1 className="font-semibold text-2xl mb-12">Похожие фильмы</h1>
+                <Text type={"24-semibold"} style="mb-12">Похожие фильмы</Text>
 
                 <MovieList movies={relatedMovies.slice(4, 8)} />
             </div>

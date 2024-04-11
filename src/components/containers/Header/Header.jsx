@@ -37,7 +37,7 @@ export default function Header() {
                 </div>
 
                 <div>
-                    <NavLink to={user ? `profile/${user.id}` : "/signup"}>
+                    <NavLink to={user ? `/profile/${user.id}` : "/signup"}>
                         <img
                             src={Profile}
                             alt="Profile Icon"

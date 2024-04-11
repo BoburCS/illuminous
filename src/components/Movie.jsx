@@ -7,8 +7,8 @@ const InterstellarGenres = ["Драма", "Фантастика", "Приклю�
 
 export default function Movie() {
     return (
-        <div className="text-white pl-32 pr-24 w-full h-auto">
-            <div className="pl-[300px] w-full h-[560px] rounded-medium bg-light-dark flex flex-col justify-center relative">
+        <div className="pl-32 pr-24 w-full h-auto flex items-center justify-center">
+            <div className="pl-[300px] w-[880px] h-[560px] rounded-medium bg-light-dark flex flex-col justify-center relative">
                 <img
                     src={Interstellar}
                     alt="Interstellar"

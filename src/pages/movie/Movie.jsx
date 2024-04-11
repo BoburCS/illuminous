@@ -1,6 +1,6 @@
 import PageLayout from "@layouts/PageLayout";
 import Hero from "@containers/Hero";
-import MovieBanner from "@components/MovieBanner";
+import MovieBanner from "./MovieBanner";
 import Trailer from "@components/Trailer";
 import Cast from "@containers/Cast";
 import Comments from "@containers/Comments";
@@ -23,6 +23,8 @@ import Scene2 from "@images/interstellar-scene2.png";
 import Scene3 from "@images/interstellar-scene3.png";
 import Scene4 from "@images/interstellar-scene4.png";
 import Scene5 from "@images/interstellar-scene5.png";
+
+import Text from "@elements/Text";
 
 const movie = {
     title: "Интерстеллар",
@@ -50,7 +52,7 @@ export default function Movie() {
             <Comments comments={comments} />
             <Scenes scenes={{ Scene1, Scene2, Scene3, Scene4, Scene5 }} />
             <div className="mx-32">
-                <h1 className="font-semibold text-2xl mb-12">Похожие фильмы</h1>
+                <Text type={"24-semibold"} style="mb-12">Похожие фильмы</Text>
 
                 <MovieList movies={relatedMovies.slice(0, 4)} />
             </div>

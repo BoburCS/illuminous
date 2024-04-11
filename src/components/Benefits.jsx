@@ -19,7 +19,7 @@ const pros = [
 
 export default function Benefits() {
     return (
-        <div className="text-white w-full h-auto px-[280px] py-[90px] bg-light-dark flex flex-col items-center mb-[150px]">
+        <div className="w-full h-auto px-[280px] py-[90px] bg-light-dark flex flex-col items-center">
             <div className="w-full flex flex-col items-center">
                 <Text style="text-red font-medium mb-6">Illuminous+</Text>
                 <Text type={"30"} style="mb-4">Фильмы и сериалы по подписке Illuminous+</Text>
