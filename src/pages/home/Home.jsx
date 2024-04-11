@@ -18,7 +18,7 @@ export default function Home() {
                 <Movie />
             </main>
             <Benefits />
-            <Subscriptions />
+            <Subscriptions btns={true} />
         </>
     );
 }

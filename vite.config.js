@@ -16,7 +16,7 @@ export default defineConfig({
             "@layouts": path.resolve(__dirname, "src/layouts"),
             "@containers": path.resolve(__dirname, "src/components/containers"),
             "@cards": path.resolve(__dirname, "src/components/Cards"),
-            
+            "@features": path.resolve(__dirname, "src/features"),      
         },
     },
 });

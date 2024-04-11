@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import Logo from "@icons/icon-logo.svg";
 import Profile from "@icons/icon-profile.svg";
@@ -11,6 +12,8 @@ const navLinks = [
 ];
 
 export default function Header() {
+    const user = useSelector((state) => state.user.user);
+
     return (
         <header className="px-12 py-8 w-full">
             <nav className="flex items-center justify-between">
@@ -34,7 +37,7 @@ export default function Header() {
                 </div>
 
                 <div>
-                    <NavLink to={"/login"}>
+                    <NavLink to={user ? `profile/${user.id}` : "/signup"}>
                         <img
                             src={Profile}
                             alt="Profile Icon"

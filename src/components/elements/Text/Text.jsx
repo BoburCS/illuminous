@@ -11,6 +11,10 @@ export default function Text({ children, type, style }) {
             styles = "text-[2.25rem] font-semibold";
             break;
         }
+        case "32": {
+            styles = "text-[32px] font-semibold";
+            break;
+        }
         case "30": {
             styles = "text-3xl font-semibold";
             break;
