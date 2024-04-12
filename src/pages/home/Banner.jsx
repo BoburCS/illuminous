@@ -7,7 +7,7 @@ import RightArrow from "@icons/icon-right.svg";
 export default function Banner({ bg, current, swiper }) {
     return (
         <div className="px-12 py-32 flex items-center justify-between">
-            <div className="text-white font-montserrat ml-[120px]">
+            <div className="ml-[120px]">
 
                 <Text style="text-grey mb-6">
                     _______ Выбор Illuminous

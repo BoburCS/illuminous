@@ -18,7 +18,7 @@ export default function Subscriptions({ btns }) {
     };
 
     return (
-        <div className="px-[85px] ">
+        <div className="px-[85px]">
             <Text type={"20"}>Выберите подписку которая подходит Вам</Text>
             <Text style="text-grey text-center mb-[60px]">
                 Мы представляем три варианта подписки, которые <br /> подойдут

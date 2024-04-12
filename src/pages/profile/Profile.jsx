@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
+import PageLayout from "@layouts/PageLayout";
 import Hero from "@containers/Hero";
 import Subscriptions from "@components/Subscriptions";
 import Button from "@elements/Button";
@@ -21,10 +22,10 @@ const QuickLinks = [
 
 export default function Profile() {
     return (
-        <>
+        <PageLayout>
             <Hero bg={"bg-black"} Banner={ProfileBanner} />
             <Subscriptions btns={true} />
-        </>
+        </PageLayout>
     );
 }
 

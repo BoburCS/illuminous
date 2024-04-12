@@ -19,6 +19,7 @@ export default function Movie() {
                     Интерстеллар
                     <Text type={"24-medium"}>2014</Text>
                 </Text>
+
                 <div className="mb-6 w-full flex gap-4">
                     {InterstellarGenres.map((genre) => (
                         <Text style="text-red" key={genre}>
@@ -26,12 +27,16 @@ export default function Movie() {
                         </Text>
                     ))}
                 </div>
+
                 <Text style="mb-7 leading-7">
                     Когда засуха, пыльные бури и вымирание растений <br />{" "}
                     приводят человечество к продовольственному <br /> кризису,
                     коллектив исследователей и учёных...
                 </Text>
-                <Button style={"self-start"}>Смотреть</Button>
+
+                <Button style={"self-start"} to={"/movie"}>
+                    Смотреть
+                </Button>
             </div>
         </div>
     );

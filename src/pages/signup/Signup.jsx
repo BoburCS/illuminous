@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux";
 import { nanoid } from "nanoid";
 import { signup } from "@features/userSlice";
 
+import { useValidate } from "../../validation/signupValidation";
+
 import Hero from "@containers/Hero";
 import Text from "@elements/Text";
 import Button from "@elements/Button";
@@ -23,6 +25,11 @@ function SignupBanner() {
     const handleSignup = (e) => {
         e.preventDefault();
         const data = Object.fromEntries(new FormData(e.target));
+
+        if (!useValidate(data)) {
+            return;
+        }
+
         const newUser = { ...data, id: nanoid(5), token: false };
         dispatch(signup(newUser));
         navigate("/signin");
